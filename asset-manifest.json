@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Practica3/static/css/main.62ca04c5.chunk.css",
-    "main.js": "/Practica3/static/js/main.3d413d93.chunk.js",
-    "main.js.map": "/Practica3/static/js/main.3d413d93.chunk.js.map",
-    "runtime-main.js": "/Practica3/static/js/runtime-main.472dddd7.js",
-    "runtime-main.js.map": "/Practica3/static/js/runtime-main.472dddd7.js.map",
+    "main.css": "/Practica3/static/css/main.19ca6396.chunk.css",
+    "main.js": "/Practica3/static/js/main.a16dc34a.chunk.js",
+    "main.js.map": "/Practica3/static/js/main.a16dc34a.chunk.js.map",
+    "runtime-main.js": "/Practica3/static/js/runtime-main.9aad0f53.js",
+    "runtime-main.js.map": "/Practica3/static/js/runtime-main.9aad0f53.js.map",
     "static/js/2.9cd91eb3.chunk.js": "/Practica3/static/js/2.9cd91eb3.chunk.js",
     "static/js/2.9cd91eb3.chunk.js.map": "/Practica3/static/js/2.9cd91eb3.chunk.js.map",
-    "static/js/3.2c2fe4d9.chunk.js": "/Practica3/static/js/3.2c2fe4d9.chunk.js",
-    "static/js/3.2c2fe4d9.chunk.js.map": "/Practica3/static/js/3.2c2fe4d9.chunk.js.map",
+    "static/js/3.19688abf.chunk.js": "/Practica3/static/js/3.19688abf.chunk.js",
+    "static/js/3.19688abf.chunk.js.map": "/Practica3/static/js/3.19688abf.chunk.js.map",
     "index.html": "/Practica3/index.html",
-    "static/css/main.62ca04c5.chunk.css.map": "/Practica3/static/css/main.62ca04c5.chunk.css.map",
+    "static/css/main.19ca6396.chunk.css.map": "/Practica3/static/css/main.19ca6396.chunk.css.map",
     "static/js/2.9cd91eb3.chunk.js.LICENSE.txt": "/Practica3/static/js/2.9cd91eb3.chunk.js.LICENSE.txt",
     "static/media/mercadolib.f40f667c.png": "/Practica3/static/media/mercadolib.f40f667c.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.472dddd7.js",
+    "static/js/runtime-main.9aad0f53.js",
     "static/js/2.9cd91eb3.chunk.js",
-    "static/css/main.62ca04c5.chunk.css",
-    "static/js/main.3d413d93.chunk.js"
+    "static/css/main.19ca6396.chunk.css",
+    "static/js/main.a16dc34a.chunk.js"
   ]
 }
