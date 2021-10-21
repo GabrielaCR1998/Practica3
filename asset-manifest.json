@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/Practica3/static/css/main.19ca6396.chunk.css",
-    "main.js": "/Practica3/static/js/main.a16dc34a.chunk.js",
-    "main.js.map": "/Practica3/static/js/main.a16dc34a.chunk.js.map",
-    "runtime-main.js": "/Practica3/static/js/runtime-main.9aad0f53.js",
-    "runtime-main.js.map": "/Practica3/static/js/runtime-main.9aad0f53.js.map",
-    "static/js/2.9cd91eb3.chunk.js": "/Practica3/static/js/2.9cd91eb3.chunk.js",
-    "static/js/2.9cd91eb3.chunk.js.map": "/Practica3/static/js/2.9cd91eb3.chunk.js.map",
-    "static/js/3.19688abf.chunk.js": "/Practica3/static/js/3.19688abf.chunk.js",
-    "static/js/3.19688abf.chunk.js.map": "/Practica3/static/js/3.19688abf.chunk.js.map",
+    "main.css": "/Practica3/static/css/main.62ca04c5.chunk.css",
+    "main.js": "/Practica3/static/js/main.95fd32bf.chunk.js",
+    "main.js.map": "/Practica3/static/js/main.95fd32bf.chunk.js.map",
+    "runtime-main.js": "/Practica3/static/js/runtime-main.827dbb76.js",
+    "runtime-main.js.map": "/Practica3/static/js/runtime-main.827dbb76.js.map",
+    "static/css/2.0a9ec390.chunk.css": "/Practica3/static/css/2.0a9ec390.chunk.css",
+    "static/js/2.effdd747.chunk.js": "/Practica3/static/js/2.effdd747.chunk.js",
+    "static/js/2.effdd747.chunk.js.map": "/Practica3/static/js/2.effdd747.chunk.js.map",
+    "static/js/3.b2432875.chunk.js": "/Practica3/static/js/3.b2432875.chunk.js",
+    "static/js/3.b2432875.chunk.js.map": "/Practica3/static/js/3.b2432875.chunk.js.map",
     "index.html": "/Practica3/index.html",
-    "static/css/main.19ca6396.chunk.css.map": "/Practica3/static/css/main.19ca6396.chunk.css.map",
-    "static/js/2.9cd91eb3.chunk.js.LICENSE.txt": "/Practica3/static/js/2.9cd91eb3.chunk.js.LICENSE.txt",
+    "static/css/2.0a9ec390.chunk.css.map": "/Practica3/static/css/2.0a9ec390.chunk.css.map",
+    "static/css/main.62ca04c5.chunk.css.map": "/Practica3/static/css/main.62ca04c5.chunk.css.map",
+    "static/js/2.effdd747.chunk.js.LICENSE.txt": "/Practica3/static/js/2.effdd747.chunk.js.LICENSE.txt",
     "static/media/mercadolib.f40f667c.png": "/Practica3/static/media/mercadolib.f40f667c.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.9aad0f53.js",
-    "static/js/2.9cd91eb3.chunk.js",
-    "static/css/main.19ca6396.chunk.css",
-    "static/js/main.a16dc34a.chunk.js"
+    "static/js/runtime-main.827dbb76.js",
+    "static/css/2.0a9ec390.chunk.css",
+    "static/js/2.effdd747.chunk.js",
+    "static/css/main.62ca04c5.chunk.css",
+    "static/js/main.95fd32bf.chunk.js"
   ]
 }
