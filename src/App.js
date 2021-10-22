@@ -21,94 +21,89 @@ class App extends Component {
         {codigo:6,descripcion:"Teclado Primus Gaming Ballista", precio:1999, url:'https://www.primusgaming.com/media/PKS-301_620.jpg'},
       ],
     };
-  }
-  
+  }  
   
   agregar=(producto)=>{
 
-      let existe= this.state.carrito.find(e=>e.codigo===producto.codigo);
-      let temp_lista= this.state.carrito;
-      let producto_temp;
-
-      if(existe!==undefined){
-        
-        producto_temp={
-          cantidad:existe.cantidad+1,
+      let hay= this.state.carrito.find(e=>e.codigo===producto.codigo);
+      let La_lista= this.state.carrito;
+      let El_producto;
+      if(hay!==undefined){       
+        El_producto={
+          cantidad:hay.cantidad+1,
           codigo:producto.codigo,
           descripcion:producto.descripcion,
           precio:producto.precio
-        }
-        
-        temp_lista= this.state.carrito.filter(e=>e.codigo!==producto.codigo)
-        console.log(temp_lista)
+        }        
+        La_lista= this.state.carrito.filter(e=>e.codigo!==producto.codigo)
+        console.log(La_lista)
       }
       else{
-
-        producto_temp={
+        El_producto={
           cantidad:1,
           codigo:producto.codigo,
           descripcion:producto.descripcion,
           precio:producto.precio
         }
-      }
-     
+      }     
       this.setState({
-        carrito:[...temp_lista,producto_temp],
+        carrito:[...La_lista,El_producto],
         total:this.state.total+producto.precio
-      })
-   
-      Swal.fire('El Producto se ha Agregado al Carrito')
-      
+      })   
+      Swal.fire({
+        title: 'Agregado',
+        text: 'El producto se ha agregado a su carrito correctamente',
+        imageUrl: 'https://i.pinimg.com/originals/93/7c/28/937c28e56fe63a5565f330e1ec2a675a.png',
+        imageWidth: 200,
+        imageHeight: 150,
+        imageAlt: 'Custom image',
+      })    
   }
  
-  eliminar=(p,index)=>{
-     
-    let temporal;
-
-      if(p.cantidad===1){
-        temporal = this.state.carrito.filter((p,i)=>i!==index)
+  eliminar=(e,tab)=>{     
+    let ti;
+      if(e.cantidad===1){
+        ti = this.state.carrito.filter((e,t)=>t!==tab)
       }
       else{
-        const producto_temp={
-          cantidad:p.cantidad-1,
-          codigo:p.codigo,
-          descripcion:p.descripcion,
-          precio:p.precio
+        const El_producto={
+          cantidad:e.cantidad-1,
+          codigo:e.codigo,
+          descripcion:e.descripcion,
+          precio:e.precio
         }
-
-        temporal = this.state.carrito.filter((p,i)=>i!==index)
-        temporal=[...temporal,producto_temp]
-
+        ti = this.state.carrito.filter((e,t)=>t!==tab)
+        ti=[...ti,El_producto]
       }
-
      this.setState({
-      carrito:temporal,
-      total:this.state.total-p.precio
+      carrito:ti,
+      total:this.state.total-e.precio
     })
-
-    Swal.fire('El Producto se ha Eliminado del Carrito')
+    Swal.fire({
+      title: 'Eliminado',
+      text: 'El producto se ha eliminado de su carrito correctamente',
+      imageUrl: 'https://1.bp.blogspot.com/-gTK4O1JrhuE/YH7Sr9hhjAI/AAAAAAABLrQ/lPmu0BKxgH0zb3EJoJ_7w69jiHZ3SM9DQCLcBGAsYHQ/s960/Slide2%2B%25281%2529.JPG',
+      imageWidth: 200,
+      imageHeight: 150,
+      imageAlt: 'Custom image',
+    })
   }
   
   render() {
-    var arregloSort= this.state.carrito.sort((a,b) => a.codigo-b.codigo);
+    var arreglo= this.state.carrito.sort((g,a) => g.codigo-a.codigo);
     return (
       <div className="App">
         <Header/>
-        <div className="Containers">
-          
+        <div className="Tap">          
           <Productos
             ProductosLista={this.state.productosLista}
             agregar={this.agregar}
-
           />
-
           <Listado
-            lista={arregloSort}
+            lista={arreglo}
             eliminar={this.eliminar}
             total={this.state.total}
-            eliminarCarrito={this.eliminarCarrito}
-          />
-          
+          />          
         </div>
       </div>
     )

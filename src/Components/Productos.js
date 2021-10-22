@@ -6,10 +6,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 export default function Productos (props) {
-
         return (
-            <div className="App-Products">
-                <h4>Productos</h4>
+            <div className="Productos">
+                <h4>Productos</h4>                
                 <Table bordered hover size="sm" style={{verticalAlign: 'middle'}}>
             <thead>
               <tr>
@@ -28,15 +27,12 @@ export default function Productos (props) {
                     <td>{p.descripcion}</td>
                     <td><img src={p.url} className="App-descriptivo" alt="logo" /></td>
                     <td>${(p.precio).toFixed(2).replace(/\d(?=(\d{3})+.)/g, '$&,')}</td>
-                    <td><Button onClick={()=>props.agregar(p)}variant="success">Agregar</Button></td>
-
+                    <td><Button onClick={()=>props.agregar(p)}variant="success">+</Button></td>
                 </tr>
               )
             }
               </tbody>
             </Table>
-
-
             </div>
         )
 
