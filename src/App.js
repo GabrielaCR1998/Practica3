@@ -1,10 +1,10 @@
 import './App.css';
 import React, { Component } from 'react';
-import Swal from 'sweetalert2';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './Components/Header';
 import Listado from './Components/Listado';
 import Productos from './Components/Productos';
+import Swal from 'sweetalert2';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
   constructor() {
@@ -13,12 +13,12 @@ class App extends Component {
       carrito:[],
       total:0,
       productosLista:[
-        {codigo:1,descripcion:"Huawei Matebook D 15", precio:15899, url:'https://ruknplus-sa.com/image/cache/catalog/%D9%90%D9%90%D9%90%D9%90A%20samsung%20a01/100130534_100_01-224x224.jpg'},
-        {codigo:2,descripcion:"Samsung Galaxy S10", precio:13999, url:'https://ruknplus-sa.com/image/cache/catalog/%D9%90%D9%90%D9%90%D9%90A%20samsung%20a01/100130534_100_01-224x224.jpg'},
-        {codigo:3,descripcion:"Samsung Galaxy A01", precio:1850, url:'https://ruknplus-sa.com/image/cache/catalog/%D9%90%D9%90%D9%90%D9%90A%20samsung%20a01/100130534_100_01-224x224.jpg'},
-        {codigo:4,descripcion:"Xiaomi Redmi Note 9s", precio:5949, url:'https://ruknplus-sa.com/image/cache/catalog/%D9%90%D9%90%D9%90%D9%90A%20samsung%20a01/100130534_100_01-224x224.jpg'},
-        {codigo:5,descripcion:"Mochila Xiaomi", precio:699, url:'https://ruknplus-sa.com/image/cache/catalog/%D9%90%D9%90%D9%90%D9%90A%20samsung%20a01/100130534_100_01-224x224.jpg'},
-        {codigo:6,descripcion:"Teclado Primus Gaming Ballista", precio:1999, url:'https://ruknplus-sa.com/image/cache/catalog/%D9%90%D9%90%D9%90%D9%90A%20samsung%20a01/100130534_100_01-224x224.jpg'},
+        {codigo:1,descripcion:"Huawei Matebook D 15", precio:15899, url:'https://m.media-amazon.com/images/I/61zKGsIdoPL._AC_SY355_.jpg'},
+        {codigo:2,descripcion:"Samsung Galaxy S10", precio:13999, url:'https://cdn-files.kimovil.com/phone_front/0002/92/thumb_191056_phone_front_big.jpeg'},
+        {codigo:3,descripcion:"Samsung Galaxy A01", precio:1850, url:'https://http2.mlstatic.com/D_NQ_NP_926246-MLA44282592285_122020-O.jpg'},
+        {codigo:4,descripcion:"Xiaomi Redmi Note 9s", precio:5949, url:'https://m.media-amazon.com/images/I/61ShPQu-u0L._AC_SX522_.jpg'},
+        {codigo:5,descripcion:"Mochila Xiaomi", precio:699, url:'https://m.media-amazon.com/images/I/51wu2dpWapL._AC_SX569_.jpg'},
+        {codigo:6,descripcion:"Teclado Primus Gaming Ballista", precio:1999, url:'https://www.primusgaming.com/media/PKS-301_620.jpg'},
       ],
     };
   }
@@ -57,13 +57,7 @@ class App extends Component {
         total:this.state.total+producto.precio
       })
    
-      Swal.fire({
-        position: 'center',
-        icon: 'success',
-        title: 'Producto agregado',
-        showConfirmButton: false,
-        timer: 1500
-      })
+      Swal.fire('El Producto se ha Agregado al Carrito')
       
   }
  
@@ -92,13 +86,7 @@ class App extends Component {
       total:this.state.total-p.precio
     })
 
-    Swal.fire({
-      position: 'center',
-      icon: 'warning',
-      title: 'Producto eliminado',
-      showConfirmButton: false,
-      timer: 1500
-    })
+    Swal.fire('El Producto se ha Eliminado del Carrito')
   }
   
   render() {

@@ -5,11 +5,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const Listado = (props) => {
     return ( 
         <div className="List">
-          <h4>Mi Carrito</h4>
+          <h4>Carrito</h4>
         {
 
             props.lista.length===0
-            ? <p>No hay productos</p>
+            ? <p>Sin Productos</p>
             : 
              <div>
 

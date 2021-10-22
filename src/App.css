@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+.App-productos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: calc(10px + 2vmin);
+}
+
+.Containers {
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: calc(1px + 2vmin);
+}
+
+.App-descriptivo
+{
+  height: 5vmin;
+  pointer-events: none; 
+}
